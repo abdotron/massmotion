@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Jul  9 19:40:45 2019
+# Process ID: 9912
+# Current directory: /home/propatron/massmotoion/ptest
+# Command line: vivado
+# Log file: /home/propatron/massmotoion/ptest/vivado.log
+# Journal file: /home/propatron/massmotoion/ptest/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/propatron/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 6081.527 ; gain = 84.957 ; free physical = 105 ; free virtual = 9773
+startgroup
+create_report_config -report_name impl_1_place_report_timing_summary_1 -step place_design -report_type report_timing_summary -run impl_1
+set_property OPTIONS.check_timing_verbose true [get_report_config -of_objects [get_runs impl_1] impl_1_place_report_timing_summary_1]
+set_property OPTIONS.setup true [get_report_config -of_objects [get_runs impl_1] impl_1_place_report_timing_summary_1]
+create_report_config -report_name impl_1_place_report_timing_summary_2 -step place_design -report_type report_timing_summary -run impl_1
+report_clock_utilization
+ERROR: [Common 17-53] User Exception: No open design. Please open an elaborated, synthesized or implemented design before executing this command.
+report_clocks
+ERROR: [Common 17-53] User Exception: No open design. Please open an elaborated, synthesized or implemented design before executing this command.
+close_project
+open_project /home/propatron/project_3/project_3.xpr
+INFO: [Project 1-313] Project file moved from '/home/crc-portal/FPGA test projects/project_3' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/propatron/AEStest/AEStest.srcs/sources_1/new/FSMtop.v', nor could it be found using path '/home/crc-portal/FPGA test projects/AEStest/AEStest.srcs/sources_1/new/FSMtop.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/propatron/AEStest/AEStest.srcs/sources_1/new/aes_inv_cipher_top.v', nor could it be found using path '/home/crc-portal/FPGA test projects/AEStest/AEStest.srcs/sources_1/new/aes_inv_cipher_top.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/propatron/AEStest/AEStest.srcs/sources_1/new/aes_inv_sbox.v', nor could it be found using path '/home/crc-portal/FPGA test projects/AEStest/AEStest.srcs/sources_1/new/aes_inv_sbox.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/propatron/AEStest/AEStest.srcs/sources_1/new/aes_key_expand_128.v', nor could it be found using path '/home/crc-portal/FPGA test projects/AEStest/AEStest.srcs/sources_1/new/aes_key_expand_128.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/propatron/AEStest/AEStest.srcs/sources_1/new/aes_rcon.v', nor could it be found using path '/home/crc-portal/FPGA test projects/AEStest/AEStest.srcs/sources_1/new/aes_rcon.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/propatron/AEStest/AEStest.srcs/sources_1/new/aes_sbox.v', nor could it be found using path '/home/crc-portal/FPGA test projects/AEStest/AEStest.srcs/sources_1/new/aes_sbox.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/propatron/AEStest/AEStest.srcs/sources_1/new/count.v', nor could it be found using path '/home/crc-portal/FPGA test projects/AEStest/AEStest.srcs/sources_1/new/count.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/propatron/AEStest/AEStest.srcs/sources_1/new/top_module.v', nor could it be found using path '/home/crc-portal/FPGA test projects/AEStest/AEStest.srcs/sources_1/new/top_module.v'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/propatron/AEStest/AEStest.srcs/constrs_1/new/aes_xdc.xdc', nor could it be found using path '/home/crc-portal/FPGA test projects/AEStest/AEStest.srcs/constrs_1/new/aes_xdc.xdc'.
+CRITICAL WARNING: [Project 1-311] Could not find the file '/home/propatron/project_3/project_3.srcs/sources_1/ip/vio_0/vio_0.xci', nor could it be found using path '/home/crc-portal/FPGA test projects/project_3/project_3.srcs/sources_1/ip/vio_0/vio_0.xci'.
+Scanning sources...
+Finished scanning sources
+ERROR: [Project 1-510] Parsing generated run data failed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jul  9 19:47:25 2019...

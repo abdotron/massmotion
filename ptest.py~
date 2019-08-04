@@ -1,0 +1,32 @@
+import re
+
+f = open(r"./file.mm","w+") 
+for i in range(10):
+	f.write("this is line %d\r\n"%(i))
+f.close()
+
+f = open(r"./file.mm","r")
+
+#contents=f.read()
+f1 =f.readlines()
+print f1[1]
+#print f1[9]
+#print type(f1)
+#print contents[1]
+#print contents
+pattern = "^this..[1-9]$"
+i=0
+for line in f1: 
+	result = re.search(pattern, line)
+	if result:
+		print("Search successful.",i)
+	i=i+1
+#f1[4]="hello"
+f.close() 
+
+#f = open(r"./file.mm","w+")
+#for line in f1:
+#        f.write("%s \n"%line)
+#f.close()
+
+

@@ -1,0 +1,54 @@
+import re
+def search_function(filename,text):
+	search_pattern=re.compile(text)
+	with open(filename) as origin_file:
+	    for line in origin_file:
+	        line = re.findall(search_pattern, line)
+		time_stamps_list=line[0].split(',')[1]
+		time_stamps_list=list(dict.fromkeys(time_stamps_list))
+	        if line:
+			line = line[0].split(',')[1]
+			print time_stamps_list
+	        #print line
+#def get_timestamps(time_stamp,list,X,Y,Z,rangex,rangey,rangez):
+def get_agents(time_stamp,list,signs_list,rangex,rangey,rangez):
+#        time_stamps_list=list(dict.fromkeys(time_stamps_list))
+# get agents positions for all agents with in range of each window returns agents list with index agents[sign_id][agent_ids]
+	i=1
+	agents=[]
+	for i in range(1,len(signs_list)):
+		X=signs_list[i].split(',')[1]
+		Y=signs_list[i].split(',')[2]
+		Z=signs_list[i].split(',')[3]
+		agent_id=[]
+		for line in list:
+			
+		if line.split(',')[0]==time_stamp:
+#			check the position of the sign and the initial location of the agent
+				if ((float(X)-rangex)<=float(line.split(',')[2])) and (float(line.split(',')[2])<=(float(X)+rangex)) and ((float(Y)-rangey)<=float(line.split(',')[3])) and (float(line.split(',')[3])<=(float(Y)+rangey)) and ((float(Z)-rangez)<=float(line.split(',')[4])) and (float(line.split(',')[4])<=(float(Z)+rangez)):
+					agent_id.append((line.split(',')[1]))
+		
+		agents.append(agent_id)
+	return agents
+def open_file(file):
+        f = open(file,"r")
+        f2 =f.readlines()
+        f.close
+	return f2
+def write_tofile(f2,filename):
+        f2length=int(len(f2))
+        f = open(filename,"w+")
+        for line in range(f2length):
+                f.write("%s"%f2[line])
+        f.close()
+def main():
+	agents_positions="./Agents positions trial .csv"
+	signs_positions="./signs_positions.csv"
+	agents=get_agents("0",open_file(agents_positions),open_file(signs_positions),1,1,1)
+	print agents
+main()
+
+
+
+
+

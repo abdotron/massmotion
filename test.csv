@@ -1,0 +1,7 @@
+From,To,Population,Time Offset ,Curve,Avatar or Color,Profile,Init Action,Give Tokens...
+Portal_A1,Portal_Street1,90,,,Yellow,,,
+Portal_A2,Portal_Street2,112,,,Blue,,,
+Portal_A3,Portal_Inside,30,,,Green,,,
+Portal_B1,Portal_Street2,10,,,Pink,,,
+Portal_B2,Portal_Street2,50,,,White,,,
+Portal_B3,Portal_Street1,20,,,Red,,,

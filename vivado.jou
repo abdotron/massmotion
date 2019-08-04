@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Tue Jul  9 19:40:45 2019
+# Process ID: 9912
+# Current directory: /home/propatron/massmotoion/ptest
+# Command line: vivado
+# Log file: /home/propatron/massmotoion/ptest/vivado.log
+# Journal file: /home/propatron/massmotoion/ptest/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/propatron/project_1/project_1.xpr
+startgroup
+create_report_config -report_name impl_1_place_report_timing_summary_1 -step place_design -report_type report_timing_summary -run impl_1
+set_property OPTIONS.check_timing_verbose true [get_report_config -of_objects [get_runs impl_1] impl_1_place_report_timing_summary_1]
+set_property OPTIONS.setup true [get_report_config -of_objects [get_runs impl_1] impl_1_place_report_timing_summary_1]
+create_report_config -report_name impl_1_place_report_timing_summary_2 -step place_design -report_type report_timing_summary -run impl_1
+report_clock_utilization
+report_clocks
+close_project
+open_project /home/propatron/project_3/project_3.xpr
